@@ -1,0 +1,21 @@
+/* Définition des polices*/
+
+
+
+
+/*Elements principaux de la page*/
+#bloc_page
+{
+width: auto;
+margin: auto;
+}
+
+#form
+{
+    display: inline;
+}
+
+.boutonbleu
+{
+    background-color: blue;
+}
