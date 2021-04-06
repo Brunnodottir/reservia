@@ -1,14 +1,55 @@
 /* Définition des polices*/
 
 
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('raleway-variablefont_wght-webfont.eot');
+    src: url('raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('raleway-variablefont_wght-webfont.ttf') format('truetype'),
+         url('raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+        
+    
+            
+    
+    /*utilisation de la police sur le site*/
+body
+{
+font-family:'ralewaythin', arial;
+}
 
 /*Elements principaux de la page*/
 #bloc_page
 {
 width: auto;
 margin: auto;
+
 }
+
+
+
+
+/*Elements header*/
+
+#logo, #menu
+{
+flex-direction: ;}
+
+.header
+{
+    display: inline-block;
+    align-items: center;
+
+
+
+}
+/*Elements recherche*/
+
 
 #form
 {
@@ -17,5 +58,7 @@ margin: auto;
 
 .boutonbleu
 {
-    background-color: blue;
+    position: absolute;
+    background-color: #0065FC;
 }
+
