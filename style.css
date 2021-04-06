@@ -20,15 +20,23 @@
     /*utilisation de la police sur le site*/
 body
 {
-font-family:'ralewaythin', arial;
+font-family: "ralewaythin", arial;
+font-size: 0.5em;
+}
+h1
+{
+    font-weight: bold;
+}
+h2
+{
+    font-weight: 200;
 }
 
 /*Elements principaux de la page*/
-#bloc_page
-{
-width: auto;
-margin: auto;
 
+body
+{
+    width: auto;
 }
 
 
@@ -38,27 +46,41 @@ margin: auto;
 
 #logo, #menu
 {
-flex-direction: ;}
-
-.header
-{
-    display: inline-block;
-    align-items: center;
-
-
-
+display: inline-block;
+align-items: center;
 }
+
+#menu
+{
+    width: 0,5%;
+}
+
 /*Elements recherche*/
 
 
-#form
+.form, p
 {
     display: inline;
+    border-radius: 20px / 10px;
+
+
+  
 }
+
+
+#icon
+{
+    background-color: #F2F2F2;
+    size:500px;
+}
+
 
 .boutonbleu
 {
     position: absolute;
     background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    
 }
+
 
