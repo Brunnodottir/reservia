@@ -1,3 +1,5 @@
+
+  
 /* Définition des polices*/
 
 
@@ -13,74 +15,96 @@
     font-style: normal;
 
 }
-        
     
-            
-    
-    /*utilisation de la police sur le site*/
-body
-{
-font-family: "ralewaythin", arial;
-font-size: 0.5em;
-}
-h1
-{
-    font-weight: bold;
-}
-h2
-{
-    font-weight: 200;
-}
+  /*Application des polices sur tout le site + définition des blocs*/
+  body
+  {
+      font-family: 'ralewaythin', sans-serif;
+      margin: 0;
+      display: block;/*bloc principal de la page*/
 
-/*Elements principaux de la page*/
+  }
 
-body
-{
-    width: auto;
-}
+  .container
+  {
+      display: block; /*bloc intérieur avec elements, responsive avec media queries*/
+      width:100%; /*création mobile first, il prendra 100% de la page*/
 
+  }
 
+  @media (min-width: 1200px){
+  .container
+  {
+      width: 75%;
+      /*Quand l'écran fait plus de 1200px de large, le corps bloc intérieur prend 75% de la page*/
 
+  }
+  }
 
-/*Elements header*/
+  header{
+      display: block;
+  }
+  /*création du bloc "header" qui aura les elements suivants : logo, menu,titre, sous-titre,bouton de recherche,filtres et infos*/
 
-#logo, #menu
-{
-display: inline-block;
-align-items: center;
-}
+  header nav
+  {
+      display: flex;
+      height: 100px;
 
-#menu
-{
-    width: 0,5%;
-}
-
-/*Elements recherche*/
-
-
-.form, p
-{
-    display: inline;
-    border-radius: 20px / 10px;
+  }
+  header nav .logo{
+      position: absolute;
+      display: block;
+      height: 50px;
+      left: 20px;
+      top: 20px;
+  }
 
 
-  
-}
+
+  header nav .menu
+  /*création du flex et inversion, stretch pour le bas*/
+  {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: stretch;
+      align-items: stretch;
+      width: 100%; }
+
+      @media (min-width: 1200px)
+    { header nav .menu
+        .
+        {
+            height: 100%; }
 
 
-#icon
-{
-    background-color: #F2F2F2;
-    size:500px;
-}
+  }
+
+  header nav .menu .bas
+  {
+      display: flex;
+    justify-content: space-between;
+
+  }
+  ul, li
+  {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  }
+
+  a{
+      text-decoration: none;
+      color: inherit;}
 
 
-.boutonbleu
-{
-    position: absolute;
-    background-color: #0065FC;
-    border-radius: 0px 10px 10px 0px;
-    
-}
-
+  header nav .menu .bas li.bleu
+  {
+      font-weight: 600;
+      border-top: none;
+      border-bottom: 3px solid blue;
+      color: blue;
+  }
 
