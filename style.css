@@ -131,21 +131,69 @@ max-width: 500px;
 {
     background-color: grey;
     display: inline-block; /*?*/
-    padding: 0 10;
-    line-height: 35px;
+    padding: 10 10 10 10;
+    line-height: 40px;
+    border-radius: 8px 0 0 8px;
 
 }
+ .groupe input
 
-#search 
-{
-    height: 100%;
-    
-}
+    {
+    height: 40px ;
+    border: 1px solid grey;
+    font-weight: 600;
+    color: black;  /*ne fonctionne pas ?*/
+    border-radius: 8px;
+    text-align:left;
+    padding-left: 10px;
+    width: 230px;
+
+    }
 
 .groupe .bouton1
 {
-height: 100%;
+height: 40px;
 background-color: blue;
 border: 1px solid blue;
+border-radius: 0 8px 8px 0;
+
+}
+
+.filtres
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+
+}
+
+.filtres_item /*Elements communs à tous les filtres*/
+{
+ border: 2px solid black;
+ border-radius: 30px;
+ line-height: 40px;
+ display: inline-block;
+ font-size: 14px;
+ font-weight: bold;
+ margin: 8px 15px 0;
+}
+
+.filtres_item span /*Elements communs aux icones*/
+
+{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+
+    
+
 
 }
