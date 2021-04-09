@@ -20,91 +20,12 @@
   body
   {
       font-family: 'ralewaythin', sans-serif;
-      margin: 0;
-      display: block;/*bloc principal de la page*/
-
-  }
-
-  .container
-  {
-      display: block; /*bloc intérieur avec elements, responsive avec media queries*/
-      width:100%; /*création mobile first, il prendra 100% de la page*/
-
-  }
-
-  @media (min-width: 1200px){
-  .container
-  {
-      width: 75%;
-      /*Quand l'écran fait plus de 1200px de large, le corps bloc intérieur prend 75% de la page*/
-
-  }
-  }
-
-  header{
-      display: block;
-  }
-  /*création du bloc "header" qui aura les elements suivants : logo, menu,titre, sous-titre,bouton de recherche,filtres et infos*/
-
-  header nav
-  {
       display: flex;
-      height: 100px;
-
-  }
-  header nav .logo{
-      position: absolute;
-      display: block;
-      height: 50px;
-      left: 20px;
-      top: 20px;
-  }
-
-
-
-  header nav .menu
-  /*création du flex et inversion, stretch pour le bas*/
-  {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: stretch;
-      align-items: stretch;
-      width: 100%; }
-
-      @media (min-width: 1200px)
-    { header nav .menu
-        .
-        {
-            height: 100%; }
-
-
-  }
-
-  header nav .menu .bas
-  {
-      display: flex;
-    justify-content: space-between;
-
-  }
-  ul, li
-  {
-  list-style: none;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  }
-
-  a{
-      text-decoration: none;
-      color: inherit;}
-
-
-  header nav .menu .bas li.bleu
-  {
-      font-weight: 600;
-      border-top: none;
-      border-bottom: 3px solid blue;
-      color: blue;
-  }
-
+      justify-content: center;      
+}
+      
+ 
+.container
+{
+    width:760px;
+}
