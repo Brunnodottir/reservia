@@ -21,7 +21,8 @@
   {
       font-family: 'ralewaythin', sans-serif;
       display: flex;
-      justify-content: center;    
+      justify-content: center;
+       
 }
       
  
@@ -170,9 +171,10 @@ border-radius: 0 8px 8px 0;
 
 }
 
+
 .filtres_item /*Elements communs à tous les filtres*/
 {
- border: 2px solid black;
+ border: 2px solid #BDBDBD;
  border-radius: 30px;
  line-height: 40px;
  display: inline-block;
@@ -197,3 +199,141 @@ border-radius: 0 8px 8px 0;
 
 
 }
+
+
+
+
+.hebergements /*Elements communs à tous les blocs hébergements*/
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.heberg_pop /*Elements communs et alignements dans le bloc*/
+{
+display: flex;    
+flex-direction: column;
+width: 100%;
+background-color: #F2F2F2;
+}
+
+.heberg_pop .title
+
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.card /*Elements communs à toutes les cartes populaires
+: box shadow, coins arrondis, alignement intérieur, couleur de fond*/
+{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    background-color: #fff;
+    margin: 15px;
+    padding: auto;
+    border-radius: 8px;
+    
+}
+
+.photos_pop .card .card_image /*arborescence, jusqu'où remonter ?*/
+{
+overflow: hidden;
+height: 8em;
+width: 40%;
+border-radius: 15px 0px 0px 15px;
+
+
+}
+
+.container .rating i
+{
+color :#0065FC;
+}
+
+.container .rating span
+{
+    color: #BDBDBD;
+}
+.marseille /*Elements communs aux cartes Marseille = sur la classe entière ? sur la classe commune div ?*/
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cardlarge
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.photos_marseille .cardlarge
+{
+border-radius: 15px;  
+display: flex;
+height: 200px;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+
+}
+.marseille .photos_marseille .cardlarge .card_image /*arborescence, jusqu'où remonter ?*/
+{
+overflow: hidden;
+height: 8em;
+width: 100%;
+
+
+}
+
+.activites
+
+.activites_group
+{
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+width: 100%;
+}
+.activites_group .card_full
+{
+    border-radius: 15px;  
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    transition: 0.3s;
+    width: 100%;
+    
+    }
+
+.activites_group .card_full .card_image
+{
+    overflow: hidden;
+    height: 80%;
+    width: 100%;
+    border-radius: 15px;
+
+    
+    
+    }
+
+    footer
+    
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F2F2F2;
+        padding: 30px;
+    }
+
+    .footersect
