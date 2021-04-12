@@ -61,11 +61,8 @@ list-style-type: none;
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
-  
-
-   
+    width: 100%;
  
-    
 }
 
 
@@ -74,19 +71,27 @@ list-style-type: none;
 {
     
     display: flex;
-    list-style-type: none; /*comment l'ajouter aux deux en même temps ?*/
+    justify-content: space-between; /*comment les écarter?*/
+    list-style-type: none; 
+    font-weight: lighter;
     
 
 }
 
 .bleu
 {
+    color: #0065FC;
 font-weight: 700;
 border-top: none;
-border-bottom: 3px solid blue;
+border-bottom: 3px solid #0065FC;
 
 
 
+}
+
+.gris
+{
+border-bottom: 3px solid #e4dede;
 }
 
 .liens2
@@ -96,9 +101,10 @@ border-bottom: 3px solid blue;
   align-items: center;
 }
 
-.inscrire
+header nav .menu .liens2 .inscrire
 {
-    color: blue;
+    color: #0065FC;
+    list-style-type: none;
 }
 a
 {
@@ -120,19 +126,25 @@ max-width: 500px;
 .title p
 {
     font-size: 14px;
+    font-weight: lighter;
 }
 
-.search
+header .search
 {
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.groupe span
+
+.search .groupe span
 {
-    background-color: grey;
+    background-color: #F2F2F2;
+    width: 30px;
+    align-items: center;
     display: inline-block; /*?*/
-    padding: 10 10 10 10;
+    padding: 0 10;
     line-height: 40px;
     border-radius: 8px 0 0 8px;
 
@@ -141,6 +153,7 @@ max-width: 500px;
 
     {
     height: 40px ;
+    width: 40px;
     border: 1px solid grey;
     font-weight: 600;
     color: black;  /*ne fonctionne pas ?*/
@@ -154,9 +167,10 @@ max-width: 500px;
 .groupe .bouton1
 {
 height: 40px;
-background-color: blue;
-border: 1px solid blue;
-border-radius: 0 8px 8px 0;
+width: 40px;
+background-color: #0065FC;
+border: 1px solid #0065FC;
+border-radius: 8PX 8px 8px 8px;
 
 }
 
