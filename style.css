@@ -334,6 +334,24 @@ width: 100%;
         width: 100%;
         background-color: #F2F2F2;
         padding: 30px;
+        margin-bottom: 30px;
     }
 
-    .footersect
+ footer .footer_sect h5
+ {
+     font-weight: bold;
+     font-size: larger;
+ }
+
+ footer .footer_sect ul
+ {
+     list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ footer .footer_sect ul li
+ {
+     font-weight: lighter;
+     height: 30px;
+ }
