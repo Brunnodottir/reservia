@@ -42,6 +42,19 @@ header
 
 }
 
+@media(min-width: 766px)
+{
+header nav
+{
+display: flex;
+justify-content: space-between;
+height: 80px;
+
+}
+}
+
+
+
 nav
 {
 display: flex;
@@ -58,11 +71,32 @@ display: flex;
 
 }
 
+@media(min-width: 766px)
+{
+.logo
+{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+}
+
+
 .menu
 {
     display: flex;
     flex-direction: column-reverse;
     width: 100%; 
+}
+
+@media(min-width: 766px)
+{
+.menu
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
 }
 
 
@@ -79,6 +113,18 @@ display: flex;
 
 }
 
+@media(min-width: 766px)
+{
+.menu .liens1
+{
+    border-bottom: none;
+    justify-content: center;
+
+}
+}
+
+
+
 
 .active
 {
@@ -86,6 +132,16 @@ display: flex;
     font-weight: 700;
     
   
+}
+
+@media(min-width: 766px)
+{
+.menu .liens1 .active
+{
+    border-bottom: none;
+    border-top: 3px solid #0065FC;
+
+}
 }
 
 
@@ -259,12 +315,29 @@ header .info .info_circle
     flex-direction: column;
 }
 
+@media(min-width: 766px)
+{
+    .hebergements
+    {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    }
+}
+
 .heberg_pop /*Elements communs et alignements dans le bloc*/
 {
 display: flex;    
 flex-direction: column;
 width: 100%;
 background-color: #F2F2F2;
+}
+@media(min-width: 766px)
+{
+.hebergements
+{
+    order: 2;
+}
 }
 
 .heberg_pop .title 
@@ -318,7 +391,15 @@ color :#0065FC;
     flex-direction: column;
     width: 100%;
 }
-
+@media(min-width: 766px)
+{
+.marseille
+{
+    order: 1;
+    background-color: #F2F2F2;
+    margin: 30px;
+}
+}
 .cardlarge
 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
