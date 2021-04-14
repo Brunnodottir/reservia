@@ -16,95 +16,403 @@
 
 }
     
-  /*Application des polices sur tout le site + définition des blocs*/
+  /*Application des polices sur tout le site + display et alignement*/
   body
   {
       font-family: 'ralewaythin', sans-serif;
-      margin: 0;
-      display: block;/*bloc principal de la page*/
-
-  }
-
-  .container
-  {
-      display: block; /*bloc intérieur avec elements, responsive avec media queries*/
-      width:100%; /*création mobile first, il prendra 100% de la page*/
-
-  }
-
-  @media (min-width: 1200px){
-  .container
-  {
-      width: 75%;
-      /*Quand l'écran fait plus de 1200px de large, le corps bloc intérieur prend 75% de la page*/
-
-  }
-  }
-
-  header{
-      display: block;
-  }
-  /*création du bloc "header" qui aura les elements suivants : logo, menu,titre, sous-titre,bouton de recherche,filtres et infos*/
-
-  header nav
-  {
       display: flex;
-      height: 100px;
+      justify-content: center;
+      box-sizing: border-box;
+       
+}
+      
+ 
+.container /*dois-je ajouter une taille de base à donner aux elements ?
+mobile first : quelle est-la largeur en px d'un iphone 8? probleme d'affichage dans l'outil chrome*/
+{
+    width: 80%;
+}
 
-  }
-  header nav .logo{
-      position: absolute;
-      display: block;
-      height: 50px;
-      left: 20px;
-      top: 20px;
-  }
-
-
-
-  header nav .menu
-  /*création du flex et inversion, stretch pour le bas*/
-  {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: stretch;
-      align-items: stretch;
-      width: 100%; }
-
-      @media (min-width: 1200px)
-    { header nav .menu
-        .
-        {
-            height: 100%; }
-
-
-  }
-
-  header nav .menu .bas
-  {
-      display: flex;
+header
+{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 
-  }
-  ul, li
-  {
-  list-style: none;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  }
+}
 
-  a{
-      text-decoration: none;
-      color: inherit;}
+nav
+{
+display: flex;
+
+}
+
+.logo
+{
+    display: block;
+    position: absolute;
+    height: 60px;
+    left: 10px;
+    top: 15px;
+
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%; 
+}
 
 
-  header nav .menu .bas li.bleu
-  {
-      font-weight: 600;
-      border-top: none;
-      border-bottom: 3px solid blue;
-      color: blue;
-  }
+ .menu .liens1 /*probleme d'espace avec la barre bottom !! */
+{
+    
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none; /*pourquoi le remettre ?*/
+    border-top: none;
+    border-bottom: 3px solid #e4dede;
+    font-weight: lighter;
+    padding: 50px;
 
+}
+
+
+.active
+{
+    color: #0065FC;
+    font-weight: 700;
+    
+  
+}
+
+
+
+.menu .liens2 /
+{
+
+display: flex;
+align-items: center;
+list-style-type: none;
+    
+}
+
+header nav .menu .liens2 .inscrire
+{
+    
+    color: #0065FC;
+    list-style-type: none;
+    font-weight: bolder;
+    position: relative;
+    height: 60px;
+    left: 270px;
+    top: 15px;
+    
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+
+
+}
+
+.title
+{
+    padding: 0 10px;
+}
+
+.title h1
+{
+font-size: 22px;
+max-width: 500px;
+
+
+
+}
+
+.title p
+{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+header .search
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.search .groupe
+{
+        display: flex;
+}
+
+.search .groupe span
+{
+    background-color: #F2F2F2;
+    width: 50px;
+    align-items: center;
+    text-align: center;
+    display: inline;
+    line-height: 40px;
+    border-radius: 8px 0 0 8px;
+}
+ .groupe input
+
+    {
+    height: 40px ;
+    width: 40px;
+    font-weight: 600;
+    border: 1px solid #F2F2F2 ;
+    border-radius: 0 ;
+    text-align:left;
+    padding-left: 10px;
+    width: 230px;
+
+    }
+
+.groupe .bouton1
+{
+height: 40px;
+width: 40px;
+display: inline;
+background-color: #0065FC;
+border: 1px solid #0065FC;
+border-radius: 8px 8px 8px 8px;
+
+}
+
+.filtres
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+
+}
+
+
+.filtres_item /*Elements communs à tous les filtres 
+probleme d'alignement*/
+{
+ border: 2px solid #BDBDBD;
+ border-radius: 30px;
+ line-height: 40px;
+ display: inline-block;
+ padding: 0 10px 0 0;
+ font-size: 14px;
+ font-weight: bold;
+ margin: 8px 15px 0;
+ text-align: center;
+}
+
+.filtres_item span /*Elements communs aux icones*/
+
+{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+
+    
+
+
+}
+
+header .info
+{
+    margin: 5px;
+    font-size: 15px;
+
+}
+
+header .info .info_circle
+{    
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    color: #0065FC;
+    margin-right: 3px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:' Gothic Medium';
+}
+
+
+.hebergements /*Elements communs à tous les blocs hébergements*/
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.heberg_pop /*Elements communs et alignements dans le bloc*/
+{
+display: flex;    
+flex-direction: column;
+width: 100%;
+background-color: #F2F2F2;
+}
+
+.heberg_pop .title 
+
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+
+
+}
+
+
+.card /*Elements communs à toutes les cartes populaires
+: box shadow, coins arrondis, alignement intérieur, couleur de fond*/
+{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #fff;
+    margin: 15px;
+    padding: auto;
+    border-radius: 8px;
+    
+}
+
+.photos_pop .card .card_image /*l'image ne recouvre pas tout, probleme de taille ?*/
+{
+height: 135px;
+width: 125px;
+border-radius: 15px 0px 0px 15px;
+object-fit: cover;
+
+
+
+}
+
+.container .rating i
+{
+color :#0065FC;
+}
+
+.container .rating span
+{
+    color: #BDBDBD;
+}
+.marseille /*Elements communs aux cartes Marseille = sur la classe entière ? sur la classe commune div ?*/
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cardlarge
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.photos_marseille .cardlarge
+{
+border-radius: 15px;  
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+padding: 15px;
+
+}
+.marseille .photos_marseille .cardlarge .card_image /*card_image ou img ?*/
+{
+overflow: hidden;
+object-fit: cover;
+width: 100%;
+height: 8em;
+
+
+}
+
+.cardlarge .card_image img
+{
+
+}
+.cardlarge .container
+{
+height: 30%;
+}
+
+
+.activites_group
+{
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+width: 100%;
+}
+.activites_group .card_full
+{
+    border-radius: 15px;  
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    transition: 0.3s;
+    margin:25px 0 0 0;
+  
+    
+    }
+
+.activites_group .card_full .card_image
+{
+    overflow: hidden;
+    height: 80%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+
+    
+    
+    }
+
+    footer
+    
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F2F2F2;
+        margin-bottom: 30px;
+    }
+
+ footer .footer_sect h5
+ {
+     font-weight: bold;
+     font-size: larger;
+ }
+
+ footer .footer_sect ul
+ {
+     list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ footer .footer_sect ul li
+ {
+     font-weight: lighter;
+     height: 30px;
+ }
