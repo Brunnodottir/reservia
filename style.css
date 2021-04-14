@@ -22,6 +22,7 @@
       font-family: 'ralewaythin', sans-serif;
       display: flex;
       justify-content: center;
+      box-sizing: border-box;
        
 }
       
@@ -29,7 +30,7 @@
 .container /*dois-je ajouter une taille de base à donner aux elements ?
 mobile first : quelle est-la largeur en px d'un iphone 8?*/
 {
-  width: 100%;
+    width: 80%;
 }
 
 header
@@ -37,6 +38,7 @@ header
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 
 }
 
@@ -51,7 +53,7 @@ display: flex;
     display: block;
     position: absolute;
     height: 60px;
-    right: inherit;
+    left: 10px;
     top: 15px;
 
 }
@@ -64,7 +66,7 @@ display: flex;
 }
 
 
- .menu .liens1  /*probleme d'espace avec la barre bottom !! */
+ .menu .liens1 /*probleme d'espace avec la barre bottom !! */
 {
     
     display: flex;
@@ -78,12 +80,12 @@ display: flex;
 }
 
 
-.bleu
+.active
 {
     color: #0065FC;
-    border-bottom: 3px solid #0065FC;
     font-weight: 700;
-    padding: 50px;
+    
+  
 }
 
 
@@ -105,7 +107,7 @@ header nav .menu .liens2 .inscrire
     font-weight: bolder;
     position: relative;
     height: 60px;
-    left: 200px;
+    left: 270px;
     top: 15px;
     
 }
@@ -117,11 +119,16 @@ a
 
 }
 
+.title
+{
+    padding: 0 10px;
+}
 
 .title h1
 {
 font-size: 22px;
 max-width: 500px;
+
 
 
 }
@@ -322,7 +329,6 @@ color :#0065FC;
 {
 border-radius: 15px;  
 display: flex;
-
 justify-content: center;
 align-items: flex-start;
 flex-direction: column;
@@ -333,21 +339,19 @@ padding: 15px;
 {
 overflow: hidden;
 object-fit: cover;
-height: 110px;
-
+width: 100%;
+height: 8em;
 
 
 }
 
 .cardlarge .card_image img
 {
-height: 70%;
-width: 90%;
+
 }
 .cardlarge .container
 {
 height: 30%;
-width: 100%;
 }
 
 
@@ -391,7 +395,6 @@ width: 100%;
         flex-direction: column;
         width: 100%;
         background-color: #F2F2F2;
-        padding: 30px;
         margin-bottom: 30px;
     }
 
