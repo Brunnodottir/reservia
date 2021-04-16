@@ -19,7 +19,7 @@
   /*Application des polices sur tout le site + display et alignement*/
   body
   {
-      font-family: 'ralewaythin', sans-serif;
+      font-family: 'ralewaythin',Arial, Helvetica, sans-serif;
       display: flex;
       justify-content: center;
       box-sizing: border-box;
@@ -27,10 +27,17 @@
 }
       
  
+@media(min-width: 766px)
+{
+body
+{
+margin: 20px;
+
+}
+}
 .container /*dois-je ajouter une taille de base à donner aux elements ?
 mobile first : quelle est-la largeur en px d'un iphone 8? probleme d'affichage dans l'outil chrome*/
 {
-    width: 80%;
 }
 
 header
@@ -66,7 +73,7 @@ display: flex;
     display: block;
     position: absolute;
     height: 60px;
-    left: 10px;
+    left: 20px;
     top: 15px;
 
 }
@@ -96,6 +103,18 @@ justify-content: center;
 {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+
+}
+}
+
+@media(min-width: 766px)
+{
+.liens1, .liens2
+{
+    display: flex;
+    align-content: space-between;
+    
 }
 }
 
@@ -109,7 +128,7 @@ justify-content: center;
     border-top: none;
     border-bottom: 3px solid #e4dede;
     font-weight: lighter;
-    padding: 50px;
+    padding: 10px;
 
 }
 
@@ -126,7 +145,7 @@ justify-content: center;
 
 
 
-.active
+.liens1 .active
 {
     color: #0065FC;
     font-weight: 700;
@@ -202,6 +221,7 @@ header .search
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 0;
+    margin-left: 15px;
 }
 
 .search .groupe
@@ -237,12 +257,45 @@ header .search
 {
 height: 40px;
 width: 40px;
-display: inline;
 background-color: #0065FC;
 border: 1px solid #0065FC;
 border-radius: 8px 8px 8px 8px;
 
+
 }
+
+.groupe .bouton2
+{
+    display: none;
+}
+
+@media(min-width: 766px)
+{
+    .bouton1
+    {
+    display: none;
+    }
+}
+
+
+@media(min-width: 766px)
+{
+    .groupe .bouton2
+    {
+    height: 44px;
+    width: auto;
+    display: inline;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 8px 8px 0px;
+    color: #F2F2F2;
+
+    
+    } 
+}
+
+
+
 
 .filtres
 {
@@ -251,10 +304,16 @@ border-radius: 8px 8px 8px 8px;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    margin-left: 15px;
     
 
 }
 
+.filtres_nom
+{
+color:black;
+font-size: ;
+}
 
 .filtres_item /*Elements communs à tous les filtres 
 probleme d'alignement*/
@@ -268,6 +327,7 @@ probleme d'alignement*/
  font-weight: bold;
  margin: 8px 15px 0;
  text-align: center;
+ 
 }
 
 .filtres_item span /*Elements communs aux icones*/
@@ -291,6 +351,8 @@ header .info
 {
     margin: 5px;
     font-size: 15px;
+    font-weight: lighter;
+    margin-left: 15px;
 
 }
 
@@ -320,8 +382,9 @@ header .info .info_circle
     .hebergements
     {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: stretch;
+    margin-bottom: 30px;
     }
 }
 
@@ -332,13 +395,23 @@ flex-direction: column;
 width: 100%;
 background-color: #F2F2F2;
 }
+
+
 @media(min-width: 766px)
 {
-.hebergements
+.heberg_pop
 {
+
+
+    display: flex;
     order: 2;
+    flex-basis: 30%;
+    padding: 15px 20px;
+    border-radius: 25px;
+
 }
 }
+
 
 .heberg_pop .title 
 
@@ -364,6 +437,26 @@ background-color: #F2F2F2;
     border-radius: 8px;
     
 }
+@media(min-width: 766px)
+{
+.heberg_pop .photos_pop .card .container
+{
+
+margin-left: 10px;
+margin-bottom: 5px;
+}
+}
+
+@media(min-width: 766px)
+{
+.heberg_pop .photos_pop .card .container .rating
+{
+
+font-size: smaller;
+}
+}
+
+
 
 .photos_pop .card .card_image /*l'image ne recouvre pas tout, probleme de taille ?*/
 {
@@ -395,9 +488,38 @@ color :#0065FC;
 {
 .marseille
 {
+    flex-basis: 70%;
     order: 1;
     background-color: #F2F2F2;
-    margin: 30px;
+    margin: 0 25px 0 0;
+    padding: 15px;
+    border-radius: 25px;
+
+}
+}
+
+@media(min-width: 766px)
+{
+.photos_marseille
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   
+
+
+}
+}
+
+@media(min-width: 766px)
+{
+.photos_marseille a
+{
+    margin-top: 20px;
+    font-weight: bolder;
+
+
 }
 }
 .cardlarge
@@ -405,6 +527,24 @@ color :#0065FC;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
+@media(min-width: 766px)
+{
+.photos_marseille .cardlarge
+{
+    flex-basis: 30%;
+    background-color: #F2F2F2;
+    
+
+}}
+
+.photos_marseille a
+{
+    margin-top: 20px;
+    font-weight: bolder;
+
+
+}
+
 
 .photos_marseille .cardlarge
 {
@@ -413,7 +553,7 @@ display: flex;
 justify-content: center;
 align-items: flex-start;
 flex-direction: column;
-padding: 15px;
+padding: 5px;
 
 }
 .marseille .photos_marseille .cardlarge .card_image /*card_image ou img ?*/
@@ -426,21 +566,71 @@ height: 8em;
 
 }
 
-.cardlarge .card_image img
+@media(min-width: 766px)
 {
+.photos_marseille .cardlarge .card_image
+{
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+}
 
+@media(min-width: 766px)
+{
+.photos_marseille .cardlarge .container
+{
+  margin-left: 10px;}
+}
+
+@media(min-width: 766px)
+{
+.photos_marseille .cardlarge h4
+{
+     margin: 5px 0;
+}
+}
+
+@media(min-width: 766px)
+{
+.photos_marseille .cardlarge p
+{
+     font-size: .9em;
+}
 }
 .cardlarge .container
 {
 height: 30%;
 }
 
+@media(min-width: 766px)
+{
+.photos_marseille .cardlarge i
+{
+     font-size: smaller;
+}
+}
 
 .activites_group
 {
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 transition: 0.3s;
 width: 100%;
+}
+
+@media(min-width: 766px)
+{
+.activites_group
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    border-radius: 8px;
+    padding: 30px 0;
+    align-items: stretch;
+    margin-bottom: 50px;
+
+}
 }
 .activites_group .card_full
 {
@@ -456,6 +646,46 @@ width: 100%;
   
     
     }
+
+    @media(min-width: 766px)
+{
+ .activites_group
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 100%;
+
+
+}
+}
+
+
+    @media(min-width: 766px)
+{
+ .card_full
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 25%;
+
+
+}
+}
+
+@media(min-width: 766px)
+{
+ .activite2
+{
+    flex-basis: 60%;
+
+
+}
+}
 
 .activites_group .card_full .card_image
 {
