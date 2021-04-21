@@ -29,17 +29,13 @@ mobile first : quelle est-la largeur en px d'un iphone 8? probleme d'affichage d
     left: 20px;
     top: 15px;}
 
-.menu
-{ display: flex;
-    flex-direction: column-reverse;
-    width: 100%;}
 
- .menu .liens1 /*probleme avec la barre bottom !! */
+
+.liens1 /*probleme avec la barre bottom !! */
 {display: flex;
     justify-content: space-around;
     list-style-type: none;
-    margin-top: 60px;
-    font-weight: lighter;
+    margin-top: 80px;
     padding: 0;}
 
 .liens1 .active /*comment colorer la barre bottom en dessous ?*/
@@ -49,6 +45,12 @@ mobile first : quelle est-la largeur en px d'un iphone 8? probleme d'affichage d
     font-weight: 700;
 }
 
+.liens1 .active a /*comment colorer la barre bottom en dessous ?*/
+{  
+
+    font-weight: 900;
+}
+
 ul.liens1 a {
     border-bottom: 3px solid #e4dede;
     padding-bottom: 20px;
@@ -56,18 +58,12 @@ ul.liens1 a {
     width: 50%;
 }
 
-.menu .liens2
-{
-align-items: center;
-list-style-type: none;
-position: relative;   }
 
-header nav .menu .liens2 .inscrire
+.inscrire
 {color: #0065FC;
     list-style-type: none;
     font-weight: bolder;
     position: absolute;
-    height: 60px;
     right: 20px;
     top: 15px;
 }
@@ -446,11 +442,12 @@ object-position: 50% 30%;
  @media screen and (min-width: 766px){
 
 body { margin: 20px;}
-    nav { display: flex; justify-content: space-between;}
-     .menu{ display: flex; flex-direction: row; width: 100%; border-bottom;}
-      .liens1 { display: flex; flex-wrap: wrap; width: 50%; order: 1;}
-      .liens2 {display: flex; flex-wrap: wrap; width: 50%;}
-      .inscrire {display: flex; width: 25%; order: 2;}
+    
+header { display: flex; width:100%; height:60px; flex-direction: column-reverse; align-items: flex-end;}
+
+      .liens1 { order: 1; margin-right: 60px;}
+      ul.liens1 a { border-bottom: hidden;}
+      .inscrire {display: flex; order: 2;}
 
 
 
