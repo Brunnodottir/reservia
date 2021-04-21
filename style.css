@@ -91,7 +91,7 @@ max-width: 500px;}
 {font-size: 14px;
 font-weight: lighter;}
 
-header .search
+.search
 {display: flex;
     justify-content: flex-start;
     margin-top: 15px;
@@ -191,13 +191,13 @@ margin-right: 15px;
     left: -5px;
     }
 
-header .info
+.info
 {margin: 5px;
     font-size: 15px;
     font-weight: lighter;
     margin-left: 15px;}
 
-header .info .info_circle
+.info .info_circle
 {     display: inline-block;
     text-align: center;
     width: 20px;
@@ -459,20 +459,20 @@ body { margin: 20px;}
     border: 1px solid #0065FC;
     border-radius: 0px 8px 8px 0px;
     color: #F2F2F2; }
-.hebergements{display: flex; flex-direction: row; justify-content: stretch; margin-bottom: 30px;}
+    .main {display: flex; justify-content: stretch; margin-bottom: 30px;}
+
     .heberg_pop
-    { display: flex; order: 2; flex-basis: 30%;
-        padding: 15px 20px;  border-radius: 25px;}
+    { order: 2;padding: 15px 20px;  border-radius: 25px; flex-basis: 30%;}
         .heberg_pop .photos_pop .card_image {height: 8em; width: auto;}
+
     .heberg_pop .photos_pop .card .container {margin-left: 10px;margin-bottom: 5px; }
-.marseille { flex-basis: 70%; order: 1;background-color: #F2F2F2;
+
+    .marseille { flex-basis:70%; order: 1;background-color: #F2F2F2;
               margin: 0 25px 0 0; padding: 15px; border-radius: 25px;}
-              .hebergements .marseille{
-                display: flex; flex-direction: column;
-              }
-        .photos_marseille { display: flex; justify-content: space-between;align-items: center;}
+            
+        .photos_marseille { display: flex; justify-content: space-evenly; flex-wrap: wrap;}
           .photos_marseille a { margin-top: 20px; font-weight: bolder;}
-          .photos_marseille .cardlarge {flex-basis: 30%;background-color: #F2F2F2;}
+          .photos_marseille .cardlarge {background-color: #F2F2F2; flex-basis: 30%; height: 200px; }
           .photos_marseille .cardlarge .card_image { overflow: hidden;border-radius: 8px 8px 0 0;width: 100%;}
           .photos_marseille .cardlarge .container {margin-left: 10px; height: 30%;}
           .photos_marseille .cardlarge h4 {margin: 5px 0;}
