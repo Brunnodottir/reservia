@@ -1,12 +1,13 @@
+
+  
   
 <!DOCTYPE html>
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-		</style>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/d33a737b03.js" crossorigin="anonymous"></script>
 
 	<title>Maquette - Reservia test</title>
@@ -63,28 +64,29 @@
 			</div>
 		
 		<div class="filtres">
-			<div class="filtres_nom">
+		
 				<h3>Filtres</h3>
-				<div class="filtres_item"> 
-					<button class="fas fa-money-bill-wave" aria-hidden="true"></button>
-				Economique
-
-				</div>
-				<div class="filtres_item">
-					<button class="fas fa-child" aria-hidden="true"></button>
-					Familial
-				</div>
 			
-				<div class="filtres_item"> 
-					<button class="fas fa-heart" aria-hidden="true"></button>
-					Romantique
-				</div>
+				<button class="filtres_item"> 
+					<span class="fas fa-money-bill-wave" aria-hidden="true"></span>
+				<div class="filtres_name">Economique</div>
+
+				</button>
+				<button class="filtres_item">
+					<span class="fas fa-child" aria-hidden="true"></span>
+					<div class="filtres_name">Familial</div>
+				</button>
+			
+				<button class="filtres_item"> 
+					<span class="fas fa-heart" aria-hidden="true"></span>
+					<div class="filtres_name">Romantique</div>
+				</button>
 				
-				<div class="filtres_item"> 
-					<button class="fas fa-dog" aria-hidden="true"></button>
-					Animaux autorisés
-				</div>
-			</div>
+				<button class="filtres_item"> 
+					<span class="fas fa-dog" aria-hidden="true"></span>
+					<div class="filtres_name">Animaux autorisés</div>
+				</button>
+			
 			
 		</div>
 		<div class="info">
@@ -108,9 +110,9 @@
 					<div class="card">
 						<img class="card_image" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="emileguillemot">
 						<div class="container">
-							<h4>Hôtel Le Soleil du matin</h4>
-							<p>Nuit à partir de 128€</p>
-							<div class="rating">
+							<h3 class="card_pop_title">Hôtel Le Soleil du matin</h3>
+							<p class="card_pop_title">Nuit à partir de 128€</p>
+						<div class="rating">
 							<i class="fas fa-star" aria-hidden="true"></i>
 							<i class="fas fa-star" aria-hidden="true"></i>
 							<i class="fas fa-star" aria-hidden="true"></i>
@@ -122,7 +124,7 @@
 					<div class="card">
 						<img class="card_image" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="aucoeurdeleau">
 						<div class="container">
-							<h4>Au coeur de l'eau Chambres d'hôtes</h4>
+							<h3 class="card_pop_title">Au coeur de l'eau Chambres d'hôtes</h3>
 							<p>Nuit à partir de 71€</p>
 							<div class="rating">
 								<i class="fas fa-star" aria-hidden="true"></i>
@@ -138,7 +140,7 @@
 					<div class="container">
 						<h4>Hôtel Tout bleu et Blanc</h4>
 						<p>Nuit à partir de 68€</p>
-						<div class="rating">
+						<div class=" container rating">
 							<i class="fas fa-star" aria-hidden="true"></i>
 							<i class="fas fa-star" aria-hidden="true"></i>
 							<i class="fas fa-star" aria-hidden="true"></i>

@@ -2,7 +2,7 @@
   
 /* Définition des polices*/
 
-
+@font-family: 'Raleway', sans-serif;
 
 
 
@@ -13,6 +13,7 @@
     display: flex;
       justify-content: center;
       box-sizing: border-box;
+    margin: 0;
        }
       
  
@@ -37,26 +38,37 @@ mobile first : quelle est-la largeur en px d'un iphone 8? probleme d'affichage d
 {display: flex;
     justify-content: space-around;
     list-style-type: none;
-    border-bottom: 3px solid #e4dede;
+    margin-top: 60px;
     font-weight: lighter;
-    padding: 10px;}
+    padding: 0;}
 
 .liens1 .active /*comment colorer la barre bottom en dessous ?*/
-{  color: #0065FC;
+{  
+    border-color:#0065FC;
+    color: #0065FC;
     font-weight: 700;
 }
-.menu .liens2 /
-{display: flex;
+
+ul.liens1 a {
+    border-bottom: 3px solid #e4dede;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.menu .liens2
+{
 align-items: center;
-list-style-type: none;   }
+list-style-type: none;
+position: relative;   }
 
 header nav .menu .liens2 .inscrire
 {color: #0065FC;
     list-style-type: none;
     font-weight: bolder;
-    position: relative;
+    position: absolute;
     height: 60px;
-    left: 270px;
+    right: 20px;
     top: 15px;
 }
 
@@ -103,8 +115,7 @@ header .search
  
     .groupe input
 
-    {height: 40px ;
-    width: 40px;
+    {width: 40px;
     font-weight: 600;
     border: 1px solid #F2F2F2 ;
     border-radius: 0 ;
@@ -119,6 +130,7 @@ width: 40px;
 background-color: #0065FC;
 border: 1px solid #0065FC;
 border-radius: 8px 8px 8px 8px;
+color: white;
 
 
 }
@@ -136,21 +148,25 @@ border-radius: 8px 8px 8px 8px;
     margin-bottom: 20px;
     margin-left: 15px;}
 
+    .filtres h3
+{flex-basis: 100%;}
+
 
 .filtres_item /*Elements communs à tous les filtres 
 probleme d'alignement*/
 {
  border: 2px solid #BDBDBD;
+ background-color: white;
  border-radius: 30px;
  line-height: 40px;
- display: inline-block;
+ display: flex;
  padding: 0 10px 0 0;
  font-size: 14px;
  font-weight: bold;
  margin: 8px 15px 0;
  text-align: center;}
 
-.filtres_item button /*Elements communs aux icones*/
+.filtres_item span /*Elements communs aux icones*/
 
 {background-color: #DEEBFF;
     color: #0065FC;
@@ -160,6 +176,13 @@ probleme d'alignement*/
     justify-content: center;
     align-items: center;
     display: inline-flex;}
+
+.filtres_name
+{
+margin-left: 10px;
+margin-right: 15px;
+}
+    
 
  .fa
 
@@ -187,9 +210,6 @@ header .info .info_circle
     font-family:' Gothic Medium';}
 
 
-.hebergements /*Elements communs à tous les blocs hébergements*/
-{display: flex;
-    flex-direction: column;}
 
 
 .heberg_pop /*Elements communs et alignements dans le bloc*/
@@ -224,9 +244,10 @@ h2
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: #fff;
-    margin: 15px;
+    margin: 20px;
     padding: 5px;
-    border-radius: 8px;
+    border-radius: 30px;
+    border: 1px solid white;
     
 
 }
@@ -244,8 +265,16 @@ overflow: hidden;
 
 .photos_pop .card .container
 {
-padding: 10px 5px 5px 15px;
+padding: 0 5px 5px 15px;
+height: 100px;
+width: 80%;
 }
+
+h3.card_pop_title
+{
+font-size: 15px;
+}
+
 .container .rating i
 {
 color :#0065FC;
@@ -255,18 +284,13 @@ font-size: smaller;
 .container .rating span
 {
     color: #BDBDBD;
+    font-size: smaller;
 }
 .marseille /*Elements communs aux cartes Marseille = sur la classe entière ? sur la classe commune div ?*/
 {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-.cardlarge
-{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
 }
 
 .photos_marseille a
@@ -285,7 +309,10 @@ display: flex;
 justify-content: center;
 align-items: flex-start;
 flex-direction: column;
-margin: 5px 5px 15px 15px;
+margin: 20px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+border: 5px solid white;
 
 }
 .marseille .photos_marseille .cardlarge .card_image /*card_image ou img ?*/
@@ -304,8 +331,6 @@ padding: 0 0 15px 10px;
 
 .activites_group
 {
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-transition: 0.3s;
 width: 100%;
 }
 
@@ -320,7 +345,7 @@ width: 100%;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
     transition: 0.3s;
-    margin:25px 0 0 0;
+    margin:20px;
     padding: 15px 0 0 15pw;
     
   
@@ -386,6 +411,7 @@ body { margin: 20px;}
       .inscrire {display: flex; width: 25%; order: 2;}
 
 
+
 .bouton1{display: none;}
 .groupe .bouton2{ height: 44px;width: auto;display: inline; background-color: #0065FC;
     border: 1px solid #0065FC;
@@ -424,7 +450,4 @@ body { margin: 20px;}
 
 
 
-
-
-
- }
+              }
