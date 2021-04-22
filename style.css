@@ -31,7 +31,7 @@ mobile first : quelle est-la largeur en px d'un iphone 8? probleme d'affichage d
 
 
 
-.liens1 /*probleme avec la barre bottom !! */
+ .menu .liens1 /*probleme avec la barre bottom !! */
 {display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -469,21 +469,28 @@ header { display: flex; width:100%; height:60px; flex-direction: column-reverse;
             
         .photos_marseille { display: flex; justify-content: space-evenly; flex-wrap: wrap;}
           .photos_marseille a { margin-top: 20px; font-weight: bolder;}
-          .photos_marseille .cardlarge {background-color: #F2F2F2; flex-basis: 30%; height: 200px; }
+          .photos_marseille .cardlarge {background-color: #F2F2F2; flex-basis: 25%; height: 200px;}
+          .photos_marseille .cardfirst { flex-grow: 1;}
+          .photos_marseille .cardsecond { flex-grow: 1;}
           .photos_marseille .cardlarge .card_image { overflow: hidden;border-radius: 8px 8px 0 0;width: 100%;}
           .photos_marseille .cardlarge .container {margin-left: 10px; height: 30%;}
           .photos_marseille .cardlarge h4 {margin: 5px 0;}
           .photos_marseille .cardlarge p {font-size: .9em;}
-.activites {display: flex; flex-direction: column; justify-content: stretch; padding:30px; border-radius: 8px;}
-.activites_group { display: flex; flex-wrap:wrap; justify-content: space-between;
-               align-items: stretch; margin-bottom: 50px; box-shadow: none;}
-              .card_full { display: flex;flex-direction: column;justify-content: space-between;
-                  ;width: 25%; height: auto;}
+
+          .activites {display: flex; flex-direction: column; justify-content: stretch;  }
+          .activites_group { display: flex; flex-direction:column; flex-wrap:wrap; justify-content: space-between;
+               align-items: stretch; margin-bottom: 50px; box-shadow: none; height: 450px;}
+              .card_full { width: 25%;}
                   .card_image { overflow: hidden; width:100% ;}
-                  .activite1 {height: 400px;}
-                  .activite2 {height: 200px;}
-                  .activite3 {height: 200px;}
-                  .activite4
+                  .activite1, .activite4 {flex-grow: 1;}
+                  .colo {display: flex; flex-direction: column; width: 25%;}
+                  .colo .card_full {width: 90%;}
+                  .colo .card_full .activite2 {flex-basis: 60%;}
+                  .colo .card_full .activite3 {flex-basis: 35%;}
+                .colo2 {width: 25%;}
+                .colo2 .card_full {width: 90%;}
+                 
+        
     
 
 
