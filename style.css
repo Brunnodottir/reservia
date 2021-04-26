@@ -1,5 +1,3 @@
-
-  
 /* Définition des polices*/
 
 @font-family: 'Raleway', sans-serif;
@@ -16,11 +14,7 @@
     margin: 0;
        }
       
- 
 
-.container /*dois-je ajouter une taille de base à donner aux elements ?
-mobile first : quelle est-la largeur en px d'un iphone 8? probleme d'affichage dans l'outil chrome*/
-{width: 100%;}
 
 .logo
 {  display: block;
@@ -439,18 +433,20 @@ object-position: 50% 30%;
 
  /*propriétés responsives si la fenêtre fait plus de 766px*/
  
- @media screen and (min-width: 766px){
+ @media screen and (min-width: 768px){
 
-body { margin: 20px;},n 
+body { margin: 20px;}
+
     
      header { display: flex; width:100%; flex-direction: column-reverse; align-items: center;}
-            nav { display:flex; flex-direction: row; width: 50%; align-items: baseline; margin-top: -80px; margin-left: 50%;}
+            nav { display:flex; flex-direction: row; width: 50%; align-items: baseline; margin-top: -100px; margin-left: 50%;}
 
              .liens1 { width: 100%;}
-             ul.liens1 a{ border-bottom: hidden;}
-             .liens1 .active {border-top: 3px solid #0065FC;}
-             .inscrire {order: 2; position: static;}
-
+             ul.liens1 a{ border-bottom: hidden; padding: 25px;}
+             .liens1 .active {border-top: 3px solid #0065FC; width: 200px; height: 10px; padding:20px;}
+             .inscrire {order: 2; position: static; padding-right: 20px;}
+  input::placeholder
+  { color:black;}
 
 
 .bouton1{display: none;}
@@ -460,13 +456,14 @@ body { margin: 20px;},n
     color: #F2F2F2; }
     .main {display: flex; justify-content: stretch; margin-bottom: 30px;}
 
+
     .filtres h3 { flex-basis: 0;}
 
     .heberg_pop
     { order: 2;padding: 15px 20px;  border-radius: 25px; width: 30%;}
-        .heberg_pop .photos_pop .card_image {height: 8em; width: 10em;}
+        .heberg_pop .photos_pop .card_image { width: 8em;}
 
-    .heberg_pop .photos_pop .card .container {margin-left: 10px;margin-bottom: 5px; }
+    .heberg_pop .photos_pop .card .container {margin-bottom: 5px; }
 
     .marseille { width:60%; order: 1;background-color: #F2F2F2;
               margin: 0 25px 0 0; padding: 15px; border-radius: 25px;}
@@ -492,4 +489,37 @@ body { margin: 20px;},n
                 
         
     
+
+
+
+
               }
+
+
+              @media (min-width :768px) and (max-width : 1024px) 
+              
+              {
+                .containerall {width: 100%;}
+                .main { flex-direction: column; width: 100%;}
+                .heberg_pop { order: 1;flex-wrap: wrap; justify-content: center; width: 100%;}
+                .heberg_pop h2 {display: flex; justify-content: space-between;}
+                .photos_pop {display: flex; justify-content: space-between; align-items: center; flex-basis: 100%; padding: 0 8px;}  
+
+             .photos_pop .card { display: flex; flex-direction: column; width: 30%; height: 10em; padding: 5px;}
+            .heberg_pop .photos_pop .card_image {width: 100%; height: 30%;
+               border-radius: 8px; overflow: hidden;}
+            .card .container { height: 200px;}
+            .heberg_pop.photos_pop .card_image img
+            { height: 40% ;overflow: hidden; border-radius: 8px 8px 0 0; background-color: red;}
+
+                .marseille { order: 2; flex-wrap: wrap; width: 100%; margin-top: 20px;}
+            
+        
+
+              }
+            
+
+@media (min-width: 1200px){
+.containerall {width: 75%;}
+
+}
