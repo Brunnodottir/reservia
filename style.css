@@ -460,38 +460,36 @@ body { margin: 20px;},n
     color: #F2F2F2; }
     .main {display: flex; justify-content: stretch; margin-bottom: 30px;}
 
+    .filtres h3 { flex-basis: 0;}
+
     .heberg_pop
-    { order: 2;padding: 15px 20px;  border-radius: 25px; flex-basis: 30%;}
-        .heberg_pop .photos_pop .card_image {height: 8em; width: auto;}
+    { order: 2;padding: 15px 20px;  border-radius: 25px; width: 30%;}
+        .heberg_pop .photos_pop .card_image {height: 8em; width: 10em;}
 
     .heberg_pop .photos_pop .card .container {margin-left: 10px;margin-bottom: 5px; }
 
-    .marseille { flex-basis:70%; order: 1;background-color: #F2F2F2;
+    .marseille { width:60%; order: 1;background-color: #F2F2F2;
               margin: 0 25px 0 0; padding: 15px; border-radius: 25px;}
             
         .photos_marseille { display: flex; justify-content: space-evenly; flex-wrap: wrap;}
           .photos_marseille a { margin-top: 20px; font-weight: bolder;}
-          .photos_marseille .cardlarge {background-color: #F2F2F2; flex-basis: 25%; height: 200px;}
-          .photos_marseille .cardfirst { flex-grow: 1;}
-          .photos_marseille .cardsecond { flex-grow: 1;}
-          .photos_marseille .cardlarge .card_image { overflow: hidden;border-radius: 8px 8px 0 0;width: 100%;}
+          .photos_marseille .cardlarge {flex-basis: 25%; height: 200px; background-color:white;}
+          .photos_marseille .cardlarge .card_image { overflow: hidden;border-radius: 8px 8px 0 0;width: 100%}
           .photos_marseille .cardlarge .container {margin-left: 10px; height: 30%;}
           .photos_marseille .cardlarge h4 {margin: 5px 0;}
           .photos_marseille .cardlarge p {font-size: .9em;}
 
-          .activites {display: flex; flex-direction: column; justify-content: stretch;  }
-          .activites_group { display: flex; flex-direction:column; flex-wrap:wrap; justify-content: space-between;
-               align-items: stretch; margin-bottom: 50px; box-shadow: none; height: 450px;}
-              .card_full { width: 25%;}
+          .activites {display: flex; justify-content: stretch; flex-wrap: wrap; }
+          .activites_group { display: flex; flex-direction:column; flex-wrap:wrap;
+               align-items: stretch; box-shadow: none; height: 33em;}
+            
+            .card_full.entier { height: 80%; width: 22%;}
+            .separe { height: 80%; width: 22%;}
+                .card_full.60 { height:60%; width: 100%;}
+                .card_full.30 {height: 25%; width: 100%;}
+                .card_full.50 {height:50%; width:100%;}
                   .card_image { overflow: hidden; width:100% ;}
-                  .activite1, .activite4 {flex-grow: 1;}
-                  .colo {display: flex; flex-direction: column; width: 25%;}
-                  .colo .card_full {width: 90%;}
-                  .colo .card_full .activite2 {flex-basis: 60%;}
-                  .colo .card_full .activite3 {flex-basis: 35%;}
-                .colo2 {width: 25%;}
-                .colo2 .card_full {width: 90%;}
-                 
+                
         
     
 
