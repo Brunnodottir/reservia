@@ -482,8 +482,9 @@ body { margin: 20px;}
           .photos_marseille .cardlarge {flex-basis: 25%; height: 200px; background-color:white;}
           .photos_marseille .cardlarge .card_image { overflow: hidden;border-radius: 8px 8px 0 0;width: 100%}
           .photos_marseille .cardlarge .container {margin-left: 10px; height: 30%;}
+          .photos_marseille .cardlarge .container .card_large_title { font-size: 0.9em;}
           .photos_marseille .cardlarge h4 {margin: 5px 0;}
-          .photos_marseille .cardlarge p {font-size: .9em;}
+          .photos_marseille .cardlarge p {font-size: .8em;}
 
           .activites {display: flex; justify-content: stretch; flex-wrap: wrap; }
           .activites_group { display: flex; flex-direction:column; flex-wrap:wrap;
@@ -495,13 +496,15 @@ body { margin: 20px;}
                 .card_full.30 {height: 25%; width: 100%;}
                 .card_full.50 {height:50%; width:100%;}
                   .card_image { overflow: hidden; width:100% ;}
-                
+        
+                 footer { display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  background-color: #F2F2F2;
+                  padding-bottom: 20px;
+                justify-content: space-around;}
         
     
-
-
-
-
               }
 
 
@@ -509,12 +512,16 @@ body { margin: 20px;}
               
               {
                 .containerall {width: 100%;}
+                .filtres h3
+                {flex-basis: 100%;
+                margin-left: 25px;}
                 .main { flex-direction: column; width: 100%;}
                 .heberg_pop { order: 1;flex-wrap: wrap; justify-content: center; width: 100%;}
                 .heberg_pop h2 {display: flex; justify-content: space-between;}
                 .photos_pop {display: flex; justify-content: space-between; align-items: center; flex-basis: 100%; padding: 0 8px;}  
 
              .photos_pop .card { display: flex; flex-direction: column; width: 30%; padding: 5px;}
+             p.card_pop_title  { font-size: 0.8em;}
             .heberg_pop .photos_pop .card_image {width: 100%; height: 100px;
                border-radius: 8px; overflow: hidden;}
             .card .container { height: 200px;}
