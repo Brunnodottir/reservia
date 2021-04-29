@@ -36,7 +36,7 @@
 {  
     border-color:#0065FC;
     color: #0065FC;
-    font-weight: 700;
+    
 }
 
 .liens1 .active a /*comment colorer la barre bottom en dessous ?*/
@@ -470,6 +470,7 @@ body { margin: 20px;}
 
     .heberg_pop
     { order: 2;padding: 15px 20px;  border-radius: 25px; width: 30%;}
+    a.heberg_pop { hover:}
         .heberg_pop .photos_pop .card_image { width: 8em;}
 
     .heberg_pop .photos_pop .card .container {margin-bottom: 5px; }
@@ -503,6 +504,24 @@ body { margin: 20px;}
                   background-color: #F2F2F2;
                   padding-bottom: 20px;
                 justify-content: space-around;}
+
+        
+            a:hover { color:#0065FC}
+            .card:hover { box-shadow:0 0 3px 2px #F2F2F2;
+                transform: scale(1.02);
+                color: #0065FC;
+            }
+
+            .cardlarge:hover  { box-shadow:0 0 3px 2px #F2F2F2;
+                transform: scale(1.02);
+                color: #0065FC;
+            }
+
+            .card_full:hover { box-shadow:0 0 3px 2px #F2F2F2;
+                transform: scale(1.02);
+                color: #0065FC;
+            }
+
         
     
               }
