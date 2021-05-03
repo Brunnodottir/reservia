@@ -148,7 +148,7 @@ margin-left: 25px;}
 .filtres_item /*Elements communs à tous les filtres 
 probleme d'alignement*/
 {
- border: 2px solid #BDBDBD;
+ border: 2px solid #F2F2F2;
  background-color: white;
  border-radius: 30px;
  line-height: 40px;
@@ -162,7 +162,7 @@ probleme d'alignement*/
  .filtres_item:hover {background-color: #0065FC;
 cursor: pointer;}
 
-.filtres_item span /*Elements communs aux icones*/
+.filtres_item span  /*Elements communs aux icones*/
 
 {background-color: #DEEBFF;
     color: #0065FC;
@@ -172,13 +172,11 @@ cursor: pointer;}
     justify-content: center;
     align-items: center;
     display: inline-flex;
-    transform: scale(1.1);}
+    transform: scale(1.1);
+    margin-right: 15px;
+    }
 
-.filtres_name
-{
-margin-left: 10px;
-margin-right: 15px;
-}
+
     
 
  .fa
