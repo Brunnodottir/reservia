@@ -25,7 +25,7 @@
 
 
 
- ul.liens1 /*probleme avec la barre bottom !! */
+ .liens1 /*probleme avec la barre bottom !! */
 {display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -45,7 +45,7 @@
     font-weight: 900;
 }
 
-ul.liens1 a {
+.liens1 a {
     border-bottom: 3px solid #e4dede;
     padding-bottom: 20px;
     text-align: center;
@@ -456,7 +456,7 @@ body { margin: 20px;}
             nav { display:flex; flex-direction: row; width: 50%; align-items: baseline; margin-top: -100px; margin-left: 50%;}
 
              .liens1 { width: 100%;}
-             ul.liens1 a{ border-bottom: hidden; padding: 25px;}
+             .liens1 a{ border-bottom: hidden; padding: 25px;}
              .liens1 .active {border-top: 3px solid #0065FC; width: 200px; height: 10px; padding:20px;}
              .inscrire {order: 2; position: static; padding-right: 20px;}
   input::placeholder
