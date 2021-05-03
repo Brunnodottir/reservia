@@ -511,8 +511,7 @@ body { margin: 20px;}
                 justify-content: space-around;}
 
         
-            a:hover { color:#0065FC}
-            .card:hover { box-shadow:0 0 3px 2px #F2F2F2;
+                       .card:hover { box-shadow:0 0 3px 2px #F2F2F2;
                 transform: scale(1.02);
                 color: #0065FC;
             }
