@@ -10,7 +10,6 @@
     font-family: 'Raleway', sans-serif;
     display: flex;
       justify-content: center;
-      box-sizing: border-box;
     margin: 0;
        }
       
@@ -160,7 +159,7 @@ probleme d'alignement*/
  text-align: center;}
 
  .filtres_item:hover {background-color: #0065FC;
-cursor: pointer;}
+cursor: pointer; color:#F2F2F2;}
 
 .filtres_item span  /*Elements communs aux icones*/
 
@@ -285,12 +284,6 @@ font-size: smaller;
     color: #BDBDBD;
     font-size: smaller;
 }
-.marseille /*Elements communs aux cartes Marseille = sur la classe entière ? sur la classe commune div ?*/
-{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 
 .titre_corps
 {
@@ -300,7 +293,7 @@ font-size: smaller;
 .photos_marseille a
 {
     margin-top: 20px;
-    font-weight: bolder;
+
 
 
 }
@@ -308,9 +301,11 @@ font-size: smaller;
 
 .photos_marseille .cardlarge
 {
+    display: flex;
+    flex-direction: column;
 border-radius: 15px;  
 justify-content: center;
-margin: 20px;
+margin: 15px;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 transition: 0.3s;
 border: 5px solid white;
@@ -452,7 +447,7 @@ body { margin-top: 20px;}
 
     
      header { display: flex; width:100%; flex-direction: column-reverse; align-items: center;}
-            nav { display:flex; flex-direction: row; width: 50%; align-items: baseline; margin-top: -100px; margin-left: 50%;}
+            nav { display:flex; flex-direction: row; align-items: baseline; margin-top: -100px; margin-left: 800px;}
 
              .liens1 { width: 100%;}
              .liens1 a{ border-bottom: hidden; padding: 25px;}
@@ -467,42 +462,53 @@ body { margin-top: 20px;}
     border: 1px solid #0065FC;
     border-radius: 0px 8px 8px 0px;
     color: #F2F2F2; }
-    .main {display: flex; justify-content: stretch; margin-bottom: 30px;}
+    .main {display: flex; justify-content: stretch; margin-bottom: 30px; height: 40em;}
 
 
     .filtres h3 { flex-basis: 0;}
 
+
     .heberg_pop
-    { order: 2;padding: 15px 20px;  border-radius: 25px; width: 30%;}
+    { order: 2;  border-radius: 25px; width: 30%;}
     a.heberg_pop { hover:}
         .heberg_pop .photos_pop .card_image { width: 8em;}
+        .card { margin: 30px;}
 
     .heberg_pop .photos_pop .card .container {margin-bottom: 5px; position: relative; }
     .ratepop { position:absolute; bottom: 0px;}
 
-    .marseille { width:60%; order: 1;background-color: #F2F2F2;
-              margin: 0 25px 0 0; padding: 15px; border-radius: 25px;
-            margin-left:20px;}
+    .marseille { width:65%; order: 1;background-color: #F2F2F2;
+               border-radius: 25px;
+            margin-left:20px; margin-right: 20px;}
             
         .photos_marseille { display: flex; justify-content: space-evenly; flex-wrap: wrap;}
-          .photos_marseille a { margin-top: 20px; font-weight: bolder;}
+          .photos_marseille a { margin-top: 20px;}
           .photos_marseille .cardlarge {flex-basis: 25%; height: 200px; background-color:white;}
           .photos_marseille .cardlarge .card_image { overflow: hidden;border-radius: 8px 8px 0 0;width: 100%}
           .photos_marseille .cardlarge .container {margin-left: 10px; height: 30%;}
           .photos_marseille .cardlarge .container .card_large_title { font-size: 0.9em;}
           .photos_marseille .cardlarge h4 {margin: 5px 0;}
           .photos_marseille .cardlarge p {font-size: .8em;}
+          .affich {margin: 20px 60px;}
 
           .activites {display: flex; justify-content: stretch; flex-wrap: wrap; }
           .activites_group { display: flex; flex-direction:column; flex-wrap:wrap;
                align-items: stretch; box-shadow: none; height: 33em;}
+        
+        
+            .activites_group .card_full { height: 200px;}
             
             .card_full.entier { height: 80%; width: 22%;}
-            .separe { height: 80%; width: 22%;}
-                .card_full.60 { height:60%; width: 100%;}
-                .card_full.30 {height: 25%; width: 100%;}
-                .card_full.50 {height:50%; width:100%;}
-                  .card_image { overflow: hidden; width:100% ;}
+            .separe { display: flex; flex-direction:column; 80%; width: 22%; margin:0;}
+            .pourcent {height: 450px;}
+
+            .card_full.trente
+            { height: 30%;
+                margin-top: 0;
+            
+            }
+            .card_full.soixante {height: 60%;}
+                
         
                  footer { display: flex;
                   flex-direction: row;
@@ -536,13 +542,16 @@ body { margin-top: 20px;}
               
               {
                 .containerall {width: 100%;}
+                nav { margin-left: 300px;}
                 .filtres h3
                 {flex-basis: 100%;
                 margin-left: 25px;}
                 .main { flex-direction: column; width: 100%;}
-                .heberg_pop { order: 1;flex-wrap: wrap; justify-content: center; width: 100%;}
+                .heberg_pop { order: 1;flex-wrap: wrap; justify-content: center; width: 100%; margin:auto;}
                 .heberg_pop h2 {display: flex; justify-content: space-between;}
-                .photos_pop {display: flex; justify-content: space-between; align-items: center; flex-basis: 100%; padding: 0 8px;}  
+                .photos_pop {display: flex; justify-content: space-between; align-items: center; flex-basis: 100%; padding: 0 8px; }  
+
+                .main {height: 60em;}
 
              .photos_pop .card { display: flex; flex-direction: column; width: 30%; padding: 5px;}
              p.card_pop_title  { font-size: 0.8em;}
@@ -552,7 +561,9 @@ body { margin-top: 20px;}
             .heberg_pop.photos_pop .card_image img
             { height: 40% ;overflow: hidden; border-radius: 8px 8px 0 0; background-color: red;}
 
-                .marseille { order: 2; flex-wrap: wrap; width: 100%; margin-top: 20px;}
+                .marseille { order: 2; flex-wrap: wrap; width: 100%; margin-top: 20px; margin-left: 0;}
+
+
             
         
 
@@ -560,6 +571,6 @@ body { margin-top: 20px;}
             
 
 @media (min-width: 1200px){
-.containerall {width: 75%;}
+
 
 }
