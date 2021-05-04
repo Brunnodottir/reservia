@@ -261,7 +261,6 @@ overflow: hidden;
 .photos_pop .card .container
 {
 padding: 0 5px 5px 15px;
-height: 100px;
 width: 80%;
 }
 
@@ -340,7 +339,9 @@ p.card_large_title
     font-size: 0.9em;
 
 }
-
+.affich { 
+    font-weight: 600;
+}
 .activites_group
 {
 width: 100%;
@@ -447,7 +448,7 @@ object-position: 50% 30%;
  
  @media screen and (min-width: 768px){
 
-body { margin: 20px;}
+body { margin-top: 20px;}
 
     
      header { display: flex; width:100%; flex-direction: column-reverse; align-items: center;}
@@ -476,10 +477,12 @@ body { margin: 20px;}
     a.heberg_pop { hover:}
         .heberg_pop .photos_pop .card_image { width: 8em;}
 
-    .heberg_pop .photos_pop .card .container {margin-bottom: 5px; }
+    .heberg_pop .photos_pop .card .container {margin-bottom: 5px; position: relative; }
+    .ratepop { position:absolute; bottom: 0px;}
 
     .marseille { width:60%; order: 1;background-color: #F2F2F2;
-              margin: 0 25px 0 0; padding: 15px; border-radius: 25px;}
+              margin: 0 25px 0 0; padding: 15px; border-radius: 25px;
+            margin-left:20px;}
             
         .photos_marseille { display: flex; justify-content: space-evenly; flex-wrap: wrap;}
           .photos_marseille a { margin-top: 20px; font-weight: bolder;}
@@ -545,7 +548,7 @@ body { margin: 20px;}
              p.card_pop_title  { font-size: 0.8em;}
             .heberg_pop .photos_pop .card_image {width: 100%; height: 100px;
                border-radius: 8px; overflow: hidden;}
-            .card .container { height: 200px;}
+            .card .container { ;}
             .heberg_pop.photos_pop .card_image img
             { height: 40% ;overflow: hidden; border-radius: 8px 8px 0 0; background-color: red;}
 
