@@ -299,6 +299,22 @@ font-size: smaller;
 }
 
 
+.card:hover { box-shadow:0 0 3px 2px #F2F2F2;
+    transform: scale(1.02);
+    color: #0065FC;
+}
+
+.cardlarge:hover  { box-shadow:0 0 3px 2px #F2F2F2;
+    transform: scale(1.02);
+    color: #0065FC;
+}
+
+.card_full:hover { box-shadow:0 0 3px 2px #F2F2F2;
+    transform: scale(1.02);
+    color: #0065FC;
+}
+
+
 .photos_marseille .cardlarge
 {
     display: flex;
@@ -470,7 +486,7 @@ body { margin-top: 20px;}
 
     .heberg_pop
     { order: 2;  border-radius: 25px; width: 30%;}
-    a.heberg_pop { hover:}
+  
         .heberg_pop .photos_pop .card_image { width: 8em;}
         .card { margin: 30px;}
 
