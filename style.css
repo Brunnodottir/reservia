@@ -156,7 +156,8 @@ probleme d'alignement*/
  font-size: 14px;
  font-weight: bold;
  margin: 8px 15px 0;
- text-align: center;}
+ text-align: center;
+font-family: 'raleway';}
 
  .filtres_item:hover {background-color: #0065FC;
 cursor: pointer; color:#F2F2F2;}
@@ -531,7 +532,7 @@ body { margin-top: 20px;}
                   width: 100%;
                   background-color: #F2F2F2;
                   padding-bottom: 20px;
-                justify-content: space-around;}
+                justify-content: space-between;}
 
         
                        .card:hover { box-shadow:0 0 3px 2px #F2F2F2;
@@ -547,6 +548,12 @@ body { margin-top: 20px;}
             .card_full:hover { box-shadow:0 0 3px 2px #F2F2F2;
                 transform: scale(1.02);
                 color: #0065FC;
+            }
+
+            .footer_sect
+            {
+                margin-right: 50px;
+                margin-left: 50px;
             }
 
         
@@ -579,7 +586,11 @@ body { margin-top: 20px;}
 
                 .marseille { order: 2; flex-wrap: wrap; width: 100%; margin-top: 20px; margin-left: 0;}
 
-
+                .footer_sect
+                {
+                    margin-right: 50px;
+                    margin-left: 50px;
+                }
             
         
 
